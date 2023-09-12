@@ -2,7 +2,6 @@
 //!
 //! See [`String`](std::string::String) documentation for more details.
 
-
 // a simple hello world program
 fn main() {
     println!("Hello, world!");
