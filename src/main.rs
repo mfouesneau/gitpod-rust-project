@@ -5,7 +5,5 @@
 // a simple hello world program
 fn main() {
     println!("Hello, world!");
-    println!(
-        "Welcome to using Rust project template."
-    );
+    println!("Welcome to using Rust project template.");
 }
