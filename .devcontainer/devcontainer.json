@@ -11,7 +11,7 @@
     "service": "rust",
     // The optional 'workspaceFolder' property is the path VS Code should open by default when
     // connected. This is typically a file mount in .devcontainer/docker-compose.yml
-    "workspaceFolder": "/workspace",
+    // "workspaceFolder": "/workspace",
     // Set *default* container specific settings.json values on container create.
     "settings": {},
     // Add the IDs of extensions you want installed when the container is created.
@@ -19,8 +19,9 @@
         "editorconfig.editorconfig",
         "matklad.rust-analyzer",
         "vadimcn.vscode-lldb",
-        "bungcip.better-toml",
-        "serayuzgur.crates"
+        "tamasfe.even-better-toml",
+        "serayuzgur.crates",
+        "rust-lang.rust-analyzer"
     ]
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
