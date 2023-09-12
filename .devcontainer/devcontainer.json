@@ -6,6 +6,7 @@
     // Update the 'dockerComposeFile' list if you have more compose files or use different names.
     // The .devcontainer/docker-compose.yml file contains any overrides you need/want to make.
     // "dockerComposeFile": ["../docker-compose.yml"],
+    "dockerFile": "Dockerfile",
     // The 'service' property is the name of the service for the container that VS Code should
     // use. Update this value and .devcontainer/docker-compose.yml to the real service name.
     "service": "rust",
@@ -13,7 +14,14 @@
     // connected. This is typically a file mount in .devcontainer/docker-compose.yml
     // "workspaceFolder": "/workspace",
     // Set *default* container specific settings.json values on container create.
-    "settings": {},
+    "settings": {
+		"editor.formatOnSave": true,
+		"terminal.integrated.shell.linux": "/usr/bin/zsh",
+		"files.exclude": {
+			"**/CODE_OF_CONDUCT.md": true,
+			"**/LICENSE": true
+		}
+	},
     // Add the IDs of extensions you want installed when the container is created.
     "extensions": [
         "editorconfig.editorconfig",
@@ -21,7 +29,9 @@
         "vadimcn.vscode-lldb",
         "tamasfe.even-better-toml",
         "serayuzgur.crates",
-        "rust-lang.rust-analyzer"
+        "rust-lang.rust-analyzer",
+        "cschleiden.vscode-github-actions",
+		"ms-vsliveshare.vsliveshare",
     ]
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
