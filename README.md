@@ -44,3 +44,25 @@ You can pick your working environement (VSCode, JetBrain, Terminal, etc.)
 Sadly the support for devcontainers is under development and we need to define `gitpod.yml` configuration instead.
 
 This repository sets a similar basic workspace to the devcontainer to start a rust project and work with Gitpod.
+
+### Notebook (optional)
+
+The [EvCxR Jupyter Kernel](https://github.com/evcxr/evcxr) (pronounced "Evic-ser") allows us to execute Rust code in a Jupyter Notebook.
+
+You can install it by running the following command in a terminal:
+
+```bash
+cargo install evcxr_jupyter && evcxr_jupyter --install
+```
+
+ℹ️ you need jupyter installed on your system even if you use vscode. In the latter, you also need the `ms-toolsai.jupyter` extension to use jupyter kernels.
+
+By default the containers do not install jupyter or the kernel to remain rapidly usable.
+For the containers, you can install it by running the following command in a terminal:
+
+```bash
+sudo apt update && sudo apt install -y jupyter
+cargo install evcxr_jupyter && evcxr_jupyter --install
+```
+
+An example of notebook is provided in the `notebooks` folder.
