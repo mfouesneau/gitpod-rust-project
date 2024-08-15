@@ -1,0 +1,1 @@
+searchState.loadedDescShard("template_rust_project", 0, "A first template piece of code for example.")
