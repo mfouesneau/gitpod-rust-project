@@ -1,0 +1,1 @@
+rd_("BkA first template piece of code for example.")
