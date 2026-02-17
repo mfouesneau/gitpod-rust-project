@@ -17,7 +17,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "echo \"Welcome to the rust project container \n you are currently working with $(rustc --version)\" ",
+	"postCreateCommand": "echo \"Welcome to the rust project container \n you are currently working with $(rustc --version)\" \n run sh setup_rust_notebook.sh to install the notebook features.",
 	// Configure tool-specific properties.
 	"customizations": {
 		"settings": {
